@@ -18,13 +18,11 @@ const getFirstImage = (url) => {
 
 const createInitialContent = (imageData) => {
   const content = document.getElementById("content");
-  content.style.width = "100%";
+  const h2 = document.createElement("h2");
   if (imageData === "error") {
-    const h2 = document.createElement("h2");
     h2.textContent = "Sorry, cannot load data. Please try refreshing the page";
     content.appendChild(h2);
   } else {
-    const h2 = document.createElement("h2");
     const p = document.createElement("p");
     const button = document.createElement("button");
     const list = document.createElement("ul");
