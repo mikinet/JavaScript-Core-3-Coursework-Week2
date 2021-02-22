@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CodeYourFuture - Dog Photo Gallery</title>
+    <meta name="description" content="Introduction to Fetch">
+    <meta name="author" content="Michael Biruk">
+    <style>
+      body,div,h2,h3,button,ul,li,img{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+      }
+      body{
+        font-family:monospace;
+      }
+      #content{
+        width:100%;
+        text-align:right;
+        padding:0 1em;
+      }
+
+      h2,p{
+        text-align: center;
+      }
+      #add-image{
+        background-color: forestgreen;
+        font-size: 0.8rem;
+        padding:5px;
+        border-radius: 0.3rem;
+        margin:1.5em auto;
+      }
+      #content >ul{
+        width:inherit;
+      }
+      #content>ul li{
+        display:block;
+        float: left;
+        margin-left:1em;
+        margin-bottom:1em;        
+      }
+      #content>ul li img{
+        width:250px;
+        height:250px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content"></div>
+  </body>
+  <script src="dogs.js"></script> 
+</html>
